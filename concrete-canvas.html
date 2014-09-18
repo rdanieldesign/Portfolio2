@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
      <!--[if lt IE 7]>
@@ -23,10 +23,9 @@
           <nav>
               <i id="hamburger" class="fi-list"></i>
               <ul>
-                  <li><a>PROJECTS</a></li>
-                  <li><a href="#about">ABOUT ME</a></li>
-                  <li><a>CONTACT</a></li>
-                  <li><a>RESUME</a></li>
+                  <li><a href="index.html#projects">WORK</a></li>
+                  <li><a href="#about">CONTACT</a></li>
+                  <li><a href="resume.pdf">RESUME</a></li>
                   <li class="spacer"></li>
               </ul>
           </nav>
@@ -38,7 +37,7 @@
       <h2 class="title-individual">Concrete Canvas</h2>
       <p>Concrete Canvas is a skateboard shop located in Auburn, Alabama, a town with a large population of skateboarders who are currently forced to purchase products online or from neighboring cities. This shop prides itself on emphasizing skateboarding as an art rather than a sport, viewing the activity as a creative interpretation of one’s surrounding landscape in a physical manner. Contemporary skate shops have taken the role as a community center and headquarters for local skateboarders; while maintaining the function of providing necessary products for skateboarding, shops also carry the responsibility of promoting the local skate scene. Concrete Canvas is an operation run purely for skateboarders by skateboarders. We intend to create unity in a scattered skateboarding scene by emphasizing key values in the community. The aesthetic of Concrete Canvas is based on the contrast between the vibrant and energetic appeal of
 skateboarding and the stony, urban environment that skateboarders thrive in. Finding the creative potential in overlooked or abandoned architectural structures is skateboarding’s highest calling, and this theme is presented outright in Concrete Canvas’s color scheme: radiating orange, yellow, and red emerging from fields of rigid gray.</p>
-      <a href="">Next Project<i class="fi-arrow-right"></i></a>
+      <a class="textlink" href="email.html">Next Project<i class="fi-arrow-right"></i></a>
     </li>
     <li class="golden-large images-individual">
       <img src="img/cc-boards.jpg"/>
@@ -57,41 +56,49 @@ skateboarding and the stony, urban environment that skateboarders thrive in. Fin
           <h3> Nice to meet you. </h3>
           <p> I'm Richard, a graphic designer and aspiring web developer currently living and working in Birmingham, AL. I spend my time learning how to make things work and exploring a variety of creative outlets. When I'm not at my desk, I'm a skateboarder, hiker, and an overall adventure enthusiast. </p>
       </li>
-      <li class="full">
+      <li id="contact" class="full">
         <ul class="profile-links">
-          <li class="column-1 contact">
-            <i class="fi-mail"></i>
-            <p>rdanieldesign</p>
-          </li>
-          <li class="column-1 contact">
-            <i class="fi-telephone"></i>
-            <p>205.602.1065</p>
-          </li>
-          <li class="column-1 contact">
-            <i class="fi-page"></i>
-            <p>Resume</p>
-          </li>
+          <a href="mailto:rdanieldesign@gmail.com">
+            <li class="column-1 contact">
+              <i class="fi-mail"></i>
+              <p>rdanieldesign</p>
+            </li>
+          </a>
+          <a href="tel:6788222067">
+            <li class="column-1 contact">
+              <i class="fi-telephone"></i>
+              <p>678.822.2067</p>
+            </li>
+          </a>
+          <a href="resume.pdf">
+            <li class="column-1 contact">
+              <i class="fi-page"></i>
+              <p>Resume</p>
+            </li>
+          </a>
         </ul>
       </li>
     </ul>
   </div>
   <div id="social">
     <ul class="container">
-      <li><i class="fi-social-facebook"></i></li>
-      <li><i class="fi-social-instagram"></i></li>
-      <li><i class="fi-social-twitter"></i></li>
-      <li><i class="fi-social-linkedin"></i></li>
-      <li><i class="fi-social-behance"></i></li>
-      <li><i class="fi-social-github"></i></li>   
-      <li class="clear"></li>
+      <li><a href="https://www.facebook.com/richard.daniel.75491"><i class="fi-social-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/rdaniel7"><i class="fi-social-instagram"></i></a></li>
+      <li><a href="https://www.twitter.com/rdaniel_design"><i class="fi-social-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/profile/view?id=181642079&trk=spm_pic"><i class="fi-social-linkedin"></i></a></li>
+      <li><a href="https://www.behance.net/richarddaniel"><i class="fi-social-behance"></i></a></li>
+      <li><a href="https://github.com/rdanieldesign"><i class="fi-social-github"></i></a></li>   
     </ul>
   </div>
 </body>
-<script language="javascript" type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-  <!-- FlexSlider -->
-<script language="javascript" type="text/javascript" src="js/rd.js"></script>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script language="javascript" type="text/javascript" src="scripts/modernizer.js"></script>
+<script src="scripts/plugins.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/rd.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

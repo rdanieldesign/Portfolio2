@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
      <!--[if lt IE 7]>
@@ -23,10 +23,9 @@
           <nav>
               <i id="hamburger" class="fi-list"></i>
               <ul>
-                  <li><a>PROJECTS</a></li>
-                  <li><a href="#about">ABOUT ME</a></li>
-                  <li><a>CONTACT</a></li>
-                  <li><a>RESUME</a></li>
+                  <li><a href="index.html#projects">WORK</a></li>
+                  <li><a href="#about">CONTACT</a></li>
+                  <li><a href="resume.pdf">RESUME</a></li>
                   <li class="spacer"></li>
               </ul>
           </nav>
@@ -37,7 +36,7 @@
     <li class="golden-small project-description">
       <h2 class="title-individual">Shred Ready SIA Tradeshow</h2>
       <p>As an exhibitor in the SIA 2012 Trade Show, Shred Ready entered the snow industry this year with a new helmet, the Forty4. I designed a line of graphics and colorways for Shred Ready's snow helmet, along with a comprehensive company folder containing three informational flyers, a business card, and the 2012 order form and program. I collaborated with artist Evan Watson to create the back drop for the booth, a hand-stenciled eight-by-twenty foot banner that matched my folder's cover design. </p>
-      <a class="textlink" href="shredready.html">Next Project<i class="fi-arrow-right"></i></a>
+      <a class="textlink" href="summer.html">Next Project<i class="fi-arrow-right"></i></a>
     </li>
     <li class="golden-large images-individual">
       <img src="img/sr-set.jpg"/>
@@ -58,41 +57,49 @@
           <h3> Nice to meet you. </h3>
           <p> I'm Richard, a graphic designer and aspiring web developer currently living and working in Birmingham, AL. I spend my time learning how to make things work and exploring a variety of creative outlets. When I'm not at my desk, I'm a skateboarder, hiker, and an overall adventure enthusiast. </p>
       </li>
-      <li class="full">
+      <li id="contact" class="full">
         <ul class="profile-links">
-          <li class="column-1 contact">
-            <i class="fi-mail"></i>
-            <p>rdanieldesign</p>
-          </li>
-          <li class="column-1 contact">
-            <i class="fi-telephone"></i>
-            <p>205.602.1065</p>
-          </li>
-          <li class="column-1 contact">
-            <i class="fi-page"></i>
-            <p>Resume</p>
-          </li>
+          <a href="mailto:rdanieldesign@gmail.com">
+            <li class="column-1 contact">
+              <i class="fi-mail"></i>
+              <p>rdanieldesign</p>
+            </li>
+          </a>
+          <a href="tel:6788222067">
+            <li class="column-1 contact">
+              <i class="fi-telephone"></i>
+              <p>678.822.2067</p>
+            </li>
+          </a>
+          <a href="resume.pdf">
+            <li class="column-1 contact">
+              <i class="fi-page"></i>
+              <p>Resume</p>
+            </li>
+          </a>
         </ul>
       </li>
     </ul>
   </div>
   <div id="social">
     <ul class="container">
-      <li><i class="fi-social-facebook"></i></li>
-      <li><i class="fi-social-instagram"></i></li>
-      <li><i class="fi-social-twitter"></i></li>
-      <li><i class="fi-social-linkedin"></i></li>
-      <li><i class="fi-social-behance"></i></li>
-      <li><i class="fi-social-github"></i></li>   
-      <li class="clear"></li>
+      <li><a href="https://www.facebook.com/richard.daniel.75491"><i class="fi-social-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/rdaniel7"><i class="fi-social-instagram"></i></a></li>
+      <li><a href="https://www.twitter.com/rdaniel_design"><i class="fi-social-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/profile/view?id=181642079&trk=spm_pic"><i class="fi-social-linkedin"></i></a></li>
+      <li><a href="https://www.behance.net/richarddaniel"><i class="fi-social-behance"></i></a></li>
+      <li><a href="https://github.com/rdanieldesign"><i class="fi-social-github"></i></a></li>   
     </ul>
   </div>
 </body>
-<script language="javascript" type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-  <!-- FlexSlider -->
-<script language="javascript" type="text/javascript" src="js/rd.js"></script>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script language="javascript" type="text/javascript" src="scripts/modernizer.js"></script>
+<script src="scripts/plugins.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/rd.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
